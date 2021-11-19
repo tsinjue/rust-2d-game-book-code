@@ -7,6 +7,7 @@
 use bracket_lib::prelude::*;
 
 // default game screen width
+// const usage
 const SCREEN_WIDTH: i32 = 80;
 
 // default game screen height
@@ -41,7 +42,7 @@ impl Player {
     fn gravity_and_move(&mut self) {
         // Increment gravity
         if self.velocity < 2.0 {
-            self.velocity += 0.2;
+            self.velocity += 0.1;
         }
 
         // Apply gravity
@@ -101,11 +102,15 @@ impl Obstacle {
         }
     }
 
+    // check if player hit obstacle
+    // true: game over
     fn hit_obstacle(&self, player: &Player) -> bool {
         let half_size = self.size / 2;
         let does_x_match = player.x == self.x; // (1)
         let player_above_gap = player.y < self.gap_y - half_size; // (2)
         let player_below_gap = player.y > self.gap_y + half_size;
+
+        // player.x = obstacle.x, the same column
         does_x_match && (player_above_gap || player_below_gap) // (3)
     }
 }
@@ -114,6 +119,7 @@ impl Obstacle {
 enum GameMode {
     Menu,
     Playing,
+    Paused,
     End,
 }
 
@@ -158,6 +164,8 @@ impl State {
         //clear score
         self.score = 0;
     }
+
+
 
     fn main_menu(&mut self, ctx: &mut BTerm) {
         // clear game window
@@ -207,6 +215,8 @@ impl State {
 
     fn play(&mut self, ctx: &mut BTerm) {
         // clear window with specified background color
+        self.mode = GameMode::Playing;
+
         ctx.cls_bg(NAVY);
 
         self.frame_time += ctx.frame_time_ms;
@@ -218,16 +228,22 @@ impl State {
             self.player.gravity_and_move();
         }
         // press space key to flap
-        if let Some(VirtualKeyCode::Space) = ctx.key {
+        if let Some(VirtualKeyCode::J) = ctx.key {
             self.player.flap();
+        }
+
+        if let Some(VirtualKeyCode::Space)=ctx.key{
+            self.mode = GameMode::Paused;
         }
 
         // update player position information
         self.player.render(ctx);
 
         // print hint message and player total score
-        ctx.print(0, 0, "Press SPACE to flap.");
+        ctx.print(0, 0, "Press J to flap.");
         ctx.print(0, 1, &format!("Score: {}", self.score)); // (4)
+
+        ctx.print(0, 2, "Press SPACE to Pause.");
 
         self.obstacle.render(ctx, self.player.x); // (5)
         if self.player.x > self.obstacle.x {
@@ -239,6 +255,27 @@ impl State {
             self.mode = GameMode::End;
         }
     }
+
+    fn pause(&mut self, ctx: &mut BTerm){
+        //clear window text
+        // ctx.cls();
+        // print center text on vertical y position
+        ctx.print_centered(5, "You are Paused!");
+        ctx.print_centered(6, "(P) Play Again");
+        ctx.print_centered(7, "(Q) Quit Game");
+
+        if let Some(key) = ctx.key {
+            match key {
+                // restart game
+                VirtualKeyCode::P => self.play(ctx),
+                // quit game
+                VirtualKeyCode::Q => ctx.quitting = true,
+                // do nothing
+                _ => {}
+            }
+        }
+    }
+
 }
 
 impl GameState for State {
@@ -252,6 +289,7 @@ impl GameState for State {
             GameMode::Menu => self.main_menu(ctx),
             GameMode::End => self.dead(ctx),
             GameMode::Playing => self.play(ctx),
+            GameMode::Paused=>self.pause(ctx),
         }
     }
 }
