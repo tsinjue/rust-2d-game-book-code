@@ -16,12 +16,17 @@ const SCREEN_HEIGHT: i32 = 50;
 const FRAME_DURATION: f32 = 75.0;
 
 struct Player {
+    // x position(line position)
+    // default: 0
     x: i32,
+    //y position (vertical position)
     y: i32,
+    //vertical velocity
     velocity: f32,
 }
 
 impl Player {
+    //player constructor to initialize instance
     fn new(x: i32, y: i32) -> Self {
         Player {
             // x position of player: a world-space positon
@@ -72,8 +77,11 @@ impl Obstacle {
     fn new(x: i32, score: i32) -> Self {
         let mut random = RandomNumberGenerator::new();
         Obstacle {
+            // world-space: x coordination
             x,
+            // gap center y position
             gap_y: random.range(10, 40),
+            //gap size. smaller when player winning more score
             size: i32::max(2, 20 - score),
         }
     }
@@ -110,75 +118,114 @@ enum GameMode {
 }
 
 struct State {
+    // player
     player: Player,
+    // frame time
     frame_time: f32,
+    // obstacle
     obstacle: Obstacle,
+    // game mode
     mode: GameMode,
+    // player score
     score: i32,
 }
 
 impl State {
+    // game state constructor to initialize instance
     fn new() -> Self {
         State {
             player: Player::new(5, 25),
+            //default frame time
             frame_time: 0.0,
+            // obstacle construction
             obstacle: Obstacle::new(SCREEN_WIDTH, 0),
+            // default entering menu mode
             mode: GameMode::Menu,
+            // default score
             score: 0,
         }
     }
 
     fn restart(&mut self) {
+        // construct new player and make initialization
         self.player = Player::new(5, 25);
+        //clear frame time
         self.frame_time = 0.0;
+        //construct obstacle
         self.obstacle = Obstacle::new(SCREEN_WIDTH, 0);
+        //update game status
         self.mode = GameMode::Playing;
+        //clear score
         self.score = 0;
     }
 
     fn main_menu(&mut self, ctx: &mut BTerm) {
+        // clear game window
         ctx.cls();
+        // print line(x coordinate) center
         ctx.print_centered(5, "Welcome to Flappy Dragon");
         ctx.print_centered(8, "(P) Play Game");
         ctx.print_centered(9, "(Q) Quit Game");
 
         if let Some(key) = ctx.key {
+            // handle key incident
             match key {
+                // restart game
                 VirtualKeyCode::P => self.restart(),
+
+                // quit game
                 VirtualKeyCode::Q => ctx.quitting = true,
+
+                // other keys: do nothing
                 _ => {}
             }
         }
     }
 
     fn dead(&mut self, ctx: &mut BTerm) {
+        //clear window text
         ctx.cls();
+        // print center text on vertical y position
         ctx.print_centered(5, "You are dead!");
         ctx.print_centered(6, &format!("You earned {} points", self.score));
         ctx.print_centered(8, "(P) Play Again");
         ctx.print_centered(9, "(Q) Quit Game");
 
+        // deal with key incident
+        // if let and match work in the same way
         if let Some(key) = ctx.key {
             match key {
+                // restart game
                 VirtualKeyCode::P => self.restart(),
+                // quit game
                 VirtualKeyCode::Q => ctx.quitting = true,
+                // do nothing
                 _ => {}
             }
         }
     }
 
     fn play(&mut self, ctx: &mut BTerm) {
+        // clear window with specified background color
         ctx.cls_bg(NAVY);
+
         self.frame_time += ctx.frame_time_ms;
+
+
         if self.frame_time > FRAME_DURATION {
             self.frame_time = 0.0;
 
             self.player.gravity_and_move();
         }
+        // press space key to flap
         if let Some(VirtualKeyCode::Space) = ctx.key {
             self.player.flap();
         }
+
+        // update player position information
         self.player.render(ctx);
+
+        // print hint message and player total score
         ctx.print(0, 0, "Press SPACE to flap.");
         ctx.print(0, 1, &format!("Score: {}", self.score)); // (4)
 
@@ -195,6 +242,11 @@ impl State {
 }
 
 impl GameState for State {
+    // must implement tick method
+    // &mut self: allows to change game status instance
+    // ctx: provide a window into current running bracket-terminal, accessing information like mouse,
+    // keyboard etc and sending commands to draw the window
+    // short for "context", interacting with game display
     fn tick(&mut self, ctx: &mut BTerm) {
         match self.mode {
             GameMode::Menu => self.main_menu(ctx),
@@ -205,6 +257,8 @@ impl GameState for State {
 }
 
 fn main() -> BError {
+    //Result.unwrap
+    // build 80*50 terminal area
     let context = BTermBuilder::simple80x50()
         .with_title("Flappy Dragon")
         .build()?;

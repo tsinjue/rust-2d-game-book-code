@@ -28,11 +28,12 @@ impl Player {
     }
 
     fn gravity_and_move(&mut self) {
-         if self.velocity < 2.0 {
-            self.velocity += 0.1;
+
+         if self.velocity < 2.0 { // check for terminal velocity
+            self.velocity += 0.1; // Adding the current velocity moves the player up or down.
         }
 
-        self.y += self.velocity;
+        self.y += self.velocity; // Add the velocity to the player’s y position
         if self.y < 0.0 {
             self.y = 0.0;
         }
