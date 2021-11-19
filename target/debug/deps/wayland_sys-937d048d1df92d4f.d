@@ -1,0 +1,9 @@
+/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/wayland_sys-937d048d1df92d4f.rmeta: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/lib.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/common.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/client.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/server.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/egl.rs
+
+/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/wayland_sys-937d048d1df92d4f.d: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/lib.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/common.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/client.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/server.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/egl.rs
+
+/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/lib.rs:
+/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/common.rs:
+/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/client.rs:
+/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/server.rs:
+/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wayland-sys-0.28.3/src/egl.rs:

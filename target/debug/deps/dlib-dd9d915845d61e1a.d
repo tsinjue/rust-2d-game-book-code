@@ -1,0 +1,7 @@
+/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/dlib-dd9d915845d61e1a.rmeta: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dlib-0.4.2/src/lib.rs
+
+/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/libdlib-dd9d915845d61e1a.rlib: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dlib-0.4.2/src/lib.rs
+
+/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/dlib-dd9d915845d61e1a.d: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dlib-0.4.2/src/lib.rs
+
+/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dlib-0.4.2/src/lib.rs:

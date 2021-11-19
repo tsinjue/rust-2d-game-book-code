@@ -1,0 +1,1 @@
+/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/flappy_states: /home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/FirstGameFlappyAscii/flappy_states/src/main.rs

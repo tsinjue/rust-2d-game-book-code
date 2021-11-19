@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/BasicDungeonCrawler/dungeon_crawl_graphics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BasicDungeonCrawler/dungeon_crawl_map/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BasicDungeonCrawler/dungeon_crawl_player/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BasicDungeonCrawler/dungeon_crawl_rooms/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DeeperDungeons/more_levels/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EntitiesComponentsAndSystems/dungeonecs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EntitiesComponentsAndSystems/playerecs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstGameFlappyAscii/flappy_bonus/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstGameFlappyAscii/flappy_dragon/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstGameFlappyAscii/flappy_player/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstGameFlappyAscii/flappy_states/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstGameFlappyAscii/hello_bterm/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/hello_yourname/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/hello_yourname_function/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/treehouse_guestlist/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/treehouse_guestlist_enum/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/treehouse_guestlist_problem/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/treehouse_guestlist_struct/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/treehouse_guestlist_trim/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStepsWithRust/treehouse_guestlist_vector/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HealthSimpleMelee/combat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HealthSimpleMelee/healing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HealthSimpleMelee/health/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InstallingRust/Clippy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InstallingRust/ClippyFixed/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InstallingRust/HelloWorld/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InventoryAndPowerUps/carrying_items/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InventoryAndPowerUps/potions_and_scrolls/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Loot/better_combat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Loot/loot_tables/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MapTheming/themed/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MoreInterestingDungeons/cellular/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MoreInterestingDungeons/drunkard/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MoreInterestingDungeons/output_harness/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MoreInterestingDungeons/prefab/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MoreInterestingDungeons/traits/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MoreInterestingDungeons/traits_rooms/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TurnBasedGames/intent/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TurnBasedGames/turnbased/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TurnBasedGames/wandering/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WhatCanISee/eyesight/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WhatCanISee/fov/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WhatCanISee/memory/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WinningAndLosing/gauntlet/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WinningAndLosing/losing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WinningAndLosing/winning/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
