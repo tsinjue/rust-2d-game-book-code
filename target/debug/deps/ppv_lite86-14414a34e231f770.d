@@ -1,9 +1,0 @@
-/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/ppv_lite86-14414a34e231f770.rmeta: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/lib.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/soft.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/types.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/x86_64/mod.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/x86_64/sse2.rs
-
-/home/media/workspace/git-cloud/gitee/project-code-gitee/rust-project/rust-2d-game/target/debug/deps/ppv_lite86-14414a34e231f770.d: /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/lib.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/soft.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/types.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/x86_64/mod.rs /home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/x86_64/sse2.rs
-
-/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/lib.rs:
-/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/soft.rs:
-/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/types.rs:
-/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/x86_64/mod.rs:
-/home/tsinjue/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/ppv-lite86-0.2.10/src/x86_64/sse2.rs:

@@ -1,9 +1,18 @@
-#![warn(clippy::pedantic)]
-
+// warn strict grammar
+#[warn(clippy::pedantic, clippy::all)]
+// warn unused mut
+#[warn(unused_mut)]
+// warn unused code
+#[warn(dead_code)]
 use bracket_lib::prelude::*;
 
+// default game screen width
 const SCREEN_WIDTH: i32 = 80;
+
+// default game screen height
 const SCREEN_HEIGHT: i32 = 50;
+
+// default frame duration: float type
 const FRAME_DURATION: f32 = 75.0;
 
 struct Player {
@@ -15,8 +24,11 @@ struct Player {
 impl Player {
     fn new(x: i32, y: i32) -> Self {
         Player {
+            // x position of player: a world-space positon
             x,
+            // y: vertical position of player in screen
             y,
+            //velocity: player's vertical velocity
             velocity: 0.0,
         }
     }
@@ -47,8 +59,12 @@ impl Player {
 }
 
 struct Obstacle {
+    // world-space to match the player’s world-space x value
     x: i32,
+    // obstacle center position
     gap_y: i32,
+    // the maximum (obtained via i32::max) of 20 minus the player’s score
+    // increasing game difficulty
     size: i32,
 }
 
@@ -86,6 +102,7 @@ impl Obstacle {
     }
 }
 
+#[derive(Debug)]
 enum GameMode {
     Menu,
     Playing,

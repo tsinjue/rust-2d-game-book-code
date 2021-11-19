@@ -125,6 +125,7 @@ impl Obstacle {
     }
 }
 
+#[derive(Debug)]
 enum GameMode {
     Menu,
     Playing,
@@ -139,7 +140,7 @@ struct State {
     score: i32,
 }
 
-#[drvive(Debug)]
+
 impl State {
     fn new() -> Self {
         State {
